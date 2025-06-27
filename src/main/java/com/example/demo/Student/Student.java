@@ -1,5 +1,6 @@
 package com.example.demo.Student;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Student {
@@ -7,23 +8,25 @@ public class Student {
     private int ID;
     private int age;
     private String name;
-    private LocalTime DOB;
+    private LocalDate DOB;
 
     public Student() {
     }
 
-    public Student(int ID, int age, String name, LocalTime DOB) {
+    public Student(int ID, int age, String name, LocalDate DOB) {
         this.ID = ID;
         this.age = age;
         this.name = name;
         this.DOB = DOB;
     }
 
-    public Student(int age, String name, LocalTime DOB) {
+    public Student(int age, String name, LocalDate DOB) {
         this.age = age;
         this.name = name;
         this.DOB = DOB;
     }
+
+
 
     @Override
     public String toString() {
@@ -59,11 +62,11 @@ public class Student {
         this.name = name;
     }
 
-    public LocalTime getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
-    public void setDOB(LocalTime DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 }
